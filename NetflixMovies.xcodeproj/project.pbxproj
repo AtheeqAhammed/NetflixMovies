@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4DE25B52C947ED600A6BE34 /* Ext-UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DE25B42C947ED600A6BE34 /* Ext-UIImageView.swift */; };
+		B4DE25B72C947F3500A6BE34 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DE25B62C947F3500A6BE34 /* MovieDetailViewController.swift */; };
 		B4EF98312C946CEE0067886E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF98302C946CEE0067886E /* AppDelegate.swift */; };
 		B4EF98332C946CEE0067886E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF98322C946CEE0067886E /* SceneDelegate.swift */; };
 		B4EF98352C946CEE0067886E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF98342C946CEE0067886E /* ViewController.swift */; };
 		B4EF98382C946CEE0067886E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4EF98362C946CEE0067886E /* Main.storyboard */; };
 		B4EF983A2C946CEF0067886E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4EF98392C946CEF0067886E /* Assets.xcassets */; };
 		B4EF983D2C946CEF0067886E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4EF983B2C946CEF0067886E /* LaunchScreen.storyboard */; };
+		B4EF98462C946E000067886E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF98452C946E000067886E /* MovieModel.swift */; };
+		B4EF98492C946ED50067886E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF98482C946ED50067886E /* NetworkManager.swift */; };
+		B4EF984C2C9471640067886E /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF984B2C9471640067886E /* MovieCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4DE25B42C947ED600A6BE34 /* Ext-UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext-UIImageView.swift"; sourceTree = "<group>"; };
+		B4DE25B62C947F3500A6BE34 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		B4EF982D2C946CEE0067886E /* NetflixMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EF98302C946CEE0067886E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4EF98322C946CEE0067886E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		B4EF98392C946CEF0067886E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4EF983C2C946CEF0067886E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4EF983E2C946CEF0067886E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4EF98452C946E000067886E /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		B4EF98482C946ED50067886E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B4EF984B2C9471640067886E /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4DE25B32C947EB600A6BE34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4DE25B42C947ED600A6BE34 /* Ext-UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4DE25B82C94863500A6BE34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF984B2C9471640067886E /* MovieCollectionViewCell.swift */,
+				B4EF98342C946CEE0067886E /* ViewController.swift */,
+				B4DE25B62C947F3500A6BE34 /* MovieDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4DE25B92C94864E00A6BE34 /* Supportings */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF98302C946CEE0067886E /* AppDelegate.swift */,
+				B4EF98322C946CEE0067886E /* SceneDelegate.swift */,
+				B4EF98392C946CEF0067886E /* Assets.xcassets */,
+			);
+			path = Supportings;
+			sourceTree = "<group>";
+		};
 		B4EF98242C946CEE0067886E = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +94,40 @@
 		B4EF982F2C946CEE0067886E /* NetflixMovies */ = {
 			isa = PBXGroup;
 			children = (
-				B4EF98302C946CEE0067886E /* AppDelegate.swift */,
-				B4EF98322C946CEE0067886E /* SceneDelegate.swift */,
-				B4EF98342C946CEE0067886E /* ViewController.swift */,
-				B4EF98362C946CEE0067886E /* Main.storyboard */,
-				B4EF98392C946CEF0067886E /* Assets.xcassets */,
-				B4EF983B2C946CEF0067886E /* LaunchScreen.storyboard */,
+				B4DE25B92C94864E00A6BE34 /* Supportings */,
+				B4DE25B32C947EB600A6BE34 /* Extensions */,
+				B4EF98472C946EBF0067886E /* NetworkManager */,
+				B4EF98442C946DEE0067886E /* Model */,
+				B4EF984A2C94714E0067886E /* View */,
+				B4DE25B82C94863500A6BE34 /* Controller */,
 				B4EF983E2C946CEF0067886E /* Info.plist */,
 			);
 			path = NetflixMovies;
+			sourceTree = "<group>";
+		};
+		B4EF98442C946DEE0067886E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF98452C946E000067886E /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4EF98472C946EBF0067886E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF98482C946ED50067886E /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		B4EF984A2C94714E0067886E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4EF98362C946CEE0067886E /* Main.storyboard */,
+				B4EF983B2C946CEF0067886E /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4EF98462C946E000067886E /* MovieModel.swift in Sources */,
+				B4DE25B52C947ED600A6BE34 /* Ext-UIImageView.swift in Sources */,
 				B4EF98352C946CEE0067886E /* ViewController.swift in Sources */,
+				B4EF98492C946ED50067886E /* NetworkManager.swift in Sources */,
+				B4DE25B72C947F3500A6BE34 /* MovieDetailViewController.swift in Sources */,
+				B4EF984C2C9471640067886E /* MovieCollectionViewCell.swift in Sources */,
 				B4EF98312C946CEE0067886E /* AppDelegate.swift in Sources */,
 				B4EF98332C946CEE0067886E /* SceneDelegate.swift in Sources */,
 			);
@@ -294,6 +362,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +390,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
