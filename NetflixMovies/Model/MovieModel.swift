@@ -11,6 +11,8 @@ struct MovieModel: Codable {
     var title: String
     var imagePortrait: String
     var language: String
+    var imdb: String?
+    var runtime: String
     var description: String
     
     enum CodingKeys: String, CodingKey {
@@ -18,5 +20,7 @@ struct MovieModel: Codable {
         case imagePortrait = "image_portrait"
         case language
         case description
+        case imdb
+        case runtime
     }
 }

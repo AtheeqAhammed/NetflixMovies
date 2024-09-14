@@ -52,6 +52,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         
         cell.movieTitle.text = movieData[indexPath.row].title
         cell.moviePoster.loadImage(url: URL(string:  movieData[indexPath.row].imagePortrait)!)
+        cell.imdbRating.text = "IMDB rating:  \(movieData[indexPath.row].imdb!)"
         
         return cell
     }
